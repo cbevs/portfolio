@@ -1,5 +1,5 @@
 import { SplashScreen } from "./components/splashLogo/SplashScreen.jsx"
-import { MainScreen } from "./components/FrontPage/MainScreen.jsx"
+import { MainScreen } from "./components/frontPage/MainScreen.jsx"
 
 const App = () => {
 

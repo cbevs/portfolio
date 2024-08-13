@@ -1,16 +1,10 @@
+import { ProjectList } from "../projects/ProjectList"
+
 export const RightPartition = () => {
   return (
    <div className="h-full w-full 2xl:w-1/2 text-center p-4 overflow-auto">
-    <h1 className="text-4xl p-4 color-pink">Projects go here</h1>
-    <p className="color-red dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consequat in turpis et tempor. Vestibulum facilisis enim eget lectus gravida sollicitudin. Maecenas commodo a felis sed molestie. Vestibulum id nisi quis quam aliquet tincidunt sed non odio. Aenean placerat, elit et euismod tincidunt, nunc augue pellentesque purus, at faucibus risus libero a nunc. Sed a urna ut purus hendrerit iaculis luctus sed sapien. Vestibulum eros erat, bibendum sed tellus eu, aliquet ultrices nisi.
-
-Vestibulum eget ligula sit amet sem dapibus placerat. Praesent dictum eleifend ante, pretium tristique mi elementum in. Nunc sit amet auctor erat, vitae tincidunt lectus. Donec sit amet pharetra justo. Vivamus nec sodales orci. Sed viverra sem a mi mattis feugiat vel eget odio. Integer ut purus vitae augue porttitor consectetur sit amet laoreet justo. Nullam vestibulum bibendum quam, quis mollis justo convallis in. Etiam vel arcu non lectus vehicula molestie sit amet sit amet justo. In aliquet consectetur velit, vitae sollicitudin nisi posuere a. Sed viverra nibh nec congue commodo. Aliquam a neque vitae tortor lobortis feugiat id quis enim. Etiam elementum risus neque, vel tristique mi cursus vel. Nullam sed sagittis risus.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent vitae dolor et lorem lobortis posuere ac in nunc. Etiam faucibus metus sem, et eleifend sem hendrerit in. Mauris porttitor metus sed feugiat dignissim. Nam vulputate non tellus non suscipit. Mauris rhoncus laoreet nisl, quis consectetur felis convallis in. Etiam nec interdum tellus. Sed est diam, accumsan at venenatis nec, imperdiet ut mi. Etiam scelerisque mi a tortor dictum consequat. In facilisis sapien eget congue scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc viverra, lorem sit amet gravida faucibus, ipsum risus dapibus justo, nec aliquet orci sapien et velit. Nullam convallis egestas tempor. Quisque tincidunt mollis lorem. Sed suscipit arcu nec nibh accumsan pretium.
-
-Nulla eget commodo velit. Nullam in massa porta, iaculis nisi sit amet, vulputate justo. Ut nulla urna, fringilla ac nulla eget, varius elementum ex. Nunc lobortis condimentum arcu et suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet cursus turpis. Vestibulum justo odio, laoreet vitae quam id, dapibus cursus nulla. Donec dictum rhoncus auctor. Quisque dui ligula, rutrum a facilisis et, mollis et lacus. In fringilla, nisl eget mattis accumsan, diam libero tristique magna, quis sagittis orci turpis a sem. Quisque ullamcorper euismod leo, ut dapibus arcu rutrum sed.
-
-Vivamus iaculis leo nec efficitur cursus. Vestibulum et nulla nunc. Donec non bibendum nulla. Cras efficitur purus sed turpis viverra pulvinar quis sed libero. Proin ac mauris sem. In nisl ante, fringilla quis faucibus eget, tincidunt sed justo. Nulla vestibulum, felis non ultrices rhoncus, ligula magna pharetra magna, at pulvinar odio nibh in nulla. Fusce in orci non velit elementum consectetur in non sapien. Praesent quis finibus odio. Maecenas volutpat ex eros, sed viverra magna aliquam nec. Sed suscipit erat non nisi molestie fringilla. Integer sit amet mauris lobortis, commodo leo a, iaculis nisi. Phasellus euismod ultricies felis, et placerat ex elementum sed.</p>
+    <h1 className="text-4xl p-4 color-pink font-semibold">What I've been working on!</h1>
+   <ProjectList />
    </div>
   ) 
  }

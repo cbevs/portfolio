@@ -75,6 +75,38 @@
   color: var(--light-pink)
 }
 
+.js-skill, .fw-skill, .db-skill, .soft-skill, .mk-skill, .prog-skill, .unkwn-skill {
+  padding: 0.3rem 1rem;
+}
+
+.js-skill {
+  background-color: var(--light-orange);
+}
+
+.fw-skill {
+  background-color: #7dc7e0;
+}
+
+.db-skill {
+  background-color: var(--light-pink);
+}
+
+.soft-skill {
+  background-color: #e07db3;
+}
+
+.mk-skill {
+  background-color: #c0e07d;
+}
+
+.prog-skill {
+  background-color: var(--green);
+}
+
+.unkwn-skill {
+  background-color: #7d89e0;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

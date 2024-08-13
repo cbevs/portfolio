@@ -2,34 +2,155 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  --dark-red: rgb(88, 47, 77);
+  --light-orange: rgb(247, 211, 162);
+  --light-pink: rgb(241, 159, 167);
+  --green: rgb(125, 224, 174);
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --dot-bg: #242424;
+    --dot-color: #fff7ed;
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      var(--dot-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  .greeting-text {
+    color: var(--light-pink);
+  }
+}
+
+.splash-logo {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  height: 200px;
+  animation: spin 0.5s linear infinite, fade-out 2s linear;
+}
+
+.fade-in {
+  animation: fade-in 2s;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.greeting-text {
+  position: absolute;
+  top: 70%;
+  left: 48%;
+  animation: fade-out 2s linear;
+}
+
+.bg {
+  background-image: url("./assets/background.png");
+}
+
+.color-red {
+  color: var(--dark-red);
+}
+
+.color-green {
+  color: var(--green)
+}
+
+.color-orange {
+  color: var(--light-orange)
+}
+
+.color-pink {
+  color: var(--light-pink)
+}
+
+.js-skill, .fw-skill, .db-skill, .soft-skill, .mk-skill, .prog-skill, .unkwn-skill {
+  padding: 0.3rem 1rem;
+}
+
+.js-skill {
+  background-color: var(--light-orange);
+}
+
+.fw-skill {
+  background-color: #7dc7e0;
+}
+
+.db-skill {
+  background-color: var(--light-pink);
+}
+
+.soft-skill {
+  background-color: #e07db3;
+}
+
+.mk-skill {
+  background-color: #c0e07d;
+}
+
+.prog-skill {
+  background-color: var(--green);
+}
+
+.unkwn-skill {
+  background-color: #7d89e0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; color: var(--green); font-weight: 600; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.personal-img  {
+  width: 300px;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #213547; 
+    --dark-red: rgb(88, 47, 77);
+    --light-orange: rgb(247, 211, 162);
+    --light-pink: rgb(241, 159, 167);
+    --green: rgb(125, 224, 174);
+    --dot-bg: #fff7ed;
+    --dot-color: rgb(0, 0, 0);
+    --dot-size: 1px;
+    --dot-space: 22px;
+    background:
+      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+      var(--dot-color);
   }
+
+  .greeting-text {
+    color: var(--dark-red);
+  }
+
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
   }
-}
-
-h1 {
-  color: green;
 }

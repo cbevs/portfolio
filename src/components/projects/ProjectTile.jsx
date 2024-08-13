@@ -26,9 +26,9 @@ export const ProjectTile = ({ project }) => {
 
   return (
     <div className="p-10 mb-5 shadow-md rounded-md">
-      <a href={project.url} target="_blank" className="font-semibold text-2xl color-red hover:text-red-300">{project.name}</a>
-      <p className="mt-4 color-red">{project.description}</p>
-      <ul className="text-xs pt-5">
+      <a href={project.url} target="_blank" className="font-semibold text-2xl dark:text-emerald-300 color-red hover:text-red-300">{project.name}</a>
+      <p className="mt-4 dark:text-white color-red">{project.description}</p>
+      <ul className="text-xs pt-5 dark:text-black">
         {skillsList}
       </ul>
     </div>

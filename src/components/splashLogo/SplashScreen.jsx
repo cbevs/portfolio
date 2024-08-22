@@ -1,4 +1,3 @@
-import portfolioLogo from '../../assets/portfolioLogo.png'
 import { useState, useEffect } from 'react'
 
 export const SplashScreen = () => {
@@ -16,7 +15,9 @@ export const SplashScreen = () => {
 
   return (
     <>
-        <img src={portfolioLogo} className={`splash-logo ${hide}`} />
+        <div className="outer-circle">
+          
+        </div>
         <p className={`greeting-text text-5xl font-extralight ${hide}`}>Hiya!</p>
     </>
   )

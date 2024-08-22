@@ -10,7 +10,7 @@
 
   --dark-red: rgb(88, 47, 77);
   --light-orange: rgb(247, 211, 162);
-  --light-pink: rgb(241, 159, 167);
+  --light-pink: #f19fa7;
   --green: rgb(125, 224, 174);
 
   color-scheme: light dark;
@@ -34,14 +34,6 @@
   }
 }
 
-.splash-logo {
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  height: 200px;
-  animation: spin 0.5s linear infinite, fade-out 2s linear;
-}
-
 .fade-in {
   animation: fade-in 2s;
   backdrop-filter: blur(10px);
@@ -50,13 +42,13 @@
 
 .greeting-text {
   position: absolute;
-  top: 70%;
-  left: 48%;
+  top: 60%;
+  left: 47%;
   animation: fade-out 2s linear;
 }
 
 .bg {
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/portfoiliobg.png");
 }
 
 .color-red {
@@ -105,6 +97,17 @@
 
 .unkwn-skill {
   background-color: #7d89e0;
+}
+
+.outer-circle {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  box-shadow: -2px 0px 20px 0px #000;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  animation: spin 0.5s linear infinite, fade-out 2s linear;
 }
 
 @keyframes spin {

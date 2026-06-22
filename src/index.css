@@ -7,6 +7,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  background-color: rgb(36, 36, 46);
 
   --dark-red: rgb(88, 47, 77);
   --light-orange: rgb(247, 211, 162);
@@ -14,15 +15,6 @@
   --green: rgb(125, 224, 174);
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  --dot-bg: #242424;
-    --dot-color: #fff7ed;
-    --dot-size: 1px;
-    --dot-space: 22px;
-    background:
-      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,23 +24,6 @@
   .greeting-text {
     color: var(--light-pink);
   }
-}
-
-.fade-in {
-  animation: fade-in 2s;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.greeting-text {
-  position: absolute;
-  top: 60%;
-  left: 47%;
-  animation: fade-out 2s linear;
-}
-
-.bg {
-  background-image: url("./assets/portfoiliobg.png");
 }
 
 .color-red {
@@ -99,32 +74,6 @@
   background-color: #7d89e0;
 }
 
-.outer-circle {
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-  box-shadow: -2px 0px 20px 0px #000;
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  animation: spin 0.5s linear infinite, fade-out 2s linear;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; color: var(--green); font-weight: 600; }
-}
-
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
 .personal-img  {
   width: 300px;
 }
@@ -140,10 +89,7 @@
     --dot-color: rgb(0, 0, 0);
     --dot-size: 1px;
     --dot-space: 22px;
-    background:
-      linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-      linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
+    background-color: rgb(102, 102, 130);
   }
 
   .greeting-text {

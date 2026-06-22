@@ -1,12 +1,8 @@
-import { SplashScreen } from "./components/splashLogo/SplashScreen.jsx"
-import { MainScreen } from "./components/landingPage/MainScreen.jsx"
-
 const App = () => {
 
   return (
-    <div className="bg">
-      <SplashScreen />
-      <MainScreen />
+    <div className="flex h-screen items-center justify-center">
+      <h1 className="text-3xl">Hello!</h1>
     </div>
   )
 }

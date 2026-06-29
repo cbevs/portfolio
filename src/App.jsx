@@ -1,13 +1,17 @@
-import { SplashScreen } from "./components/splashLogo/SplashScreen.jsx"
-import { MainScreen } from "./components/landingPage/MainScreen.jsx"
+import { Hero } from "./components/Hero"
+import { MainCard } from "./components/MainCard"
+import { ProjectsCard } from "./components/ProjectsCard"
+import { LinksCard } from "./components/LinksCard"
 
 const App = () => {
 
   return (
-    <div className="bg">
-      <SplashScreen />
-      <MainScreen />
-    </div>
+    <>
+      <Hero />
+      <MainCard />
+      <ProjectsCard />
+      <LinksCard />
+    </>
   )
 }
 

@@ -3,14 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   font-family: Inter, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   background-color: rgb(36, 36, 46);
-
   color-scheme: light dark;
 
   font-synthesis: none;

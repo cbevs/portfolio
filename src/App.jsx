@@ -13,4 +13,5 @@ const App = () => {
       <LinksCard />
     </>
   )
+}
 export default App

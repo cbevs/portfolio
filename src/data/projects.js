@@ -36,7 +36,7 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Plan It",
+    name: "PlanIt",
     description:
       "PlanIt was built to help develop the skills involved in group based-programming. The application allows users of the future to be able to post reviews for planets they have visited. Users can also add new planets to review, as well as upvote and downvote other user’s reviews. Most of the coding done was pair-programming and all decisions made about the application were brought to each team member, so every person had a say. This project helped foster the skills needed to create and maintain a functional application.",
     technologies: [
@@ -61,7 +61,7 @@ export const projects = [
     id: 4,
     name: "Cheer",
     description:
-      "Cheer is a mental health tracking application that accepts a user's current mood and any possible factors as input. Using this data, it then provides visual charts to help a person see trends in their moods and see what factors tend to be catalysts for moods. I built this program not only to have a mental health tracking application to use, but also to learn new to me technologies such as Prisma and D3.",
+      "Cheer is a mental health tracking application that accepts a user's current mood and any possible factors as input. Using this data, it then provides visual charts to help a person see trends in their moods and see what factors tend to be catalysts for moods. I built this program not only to have a mental health tracking application to use, but also to learn new-to-me technologies such as Prisma and D3.",
     technologies: [
       "Javascript",
       "Node",

@@ -1,10 +1,10 @@
-import personalPic from '../assets/personalPic.png'
+import portrait from '../assets/portrait.png'
 
 export const MainCard = () => {
 
   return (
       <div className="w-3/5 h-3/5 flex justify-evenly flex-col items-center md:flex-row m-auto">
-        <img src={personalPic} className="w-full h-full object-scale-down" />
+        <img src={portrait} className="rounded-full w-[400px] aspect-square object-cover" />
         <div className="h-auto w-auto p-5">
           <p>Thanks for visiting my site! My name is Chris and I have done a little bit of everything tech-wise, from general computer science to software development to data analytics. </p>
           <p className='mt-2'>I hold an Associate's degree in Computer Science and a Bachelor's degree in Data Analytics. Over the years, I’ve received a variety of industry certifications, including: CompTIA A+, Network+, Data+, Project+, and a Udacity Nanodegree in Data Analytics. Currently, I work at Northeast IS as a Cloud Systems Technician.</p>
